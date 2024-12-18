@@ -12,23 +12,220 @@ p:last-child {
   margin-bottom: 0;
 }
 
-/* ul {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
-} */
+}
 
 a {
   color: currentColor;
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+body {
+  background-color: rgb(168, 207, 180);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+  ,url(https://cdn.pixabay.com/photo/2023/07/25/19/47/milky-way-8149815_1280.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  width: 500px;
+  height: 150px;
+  background-color: #8890ac;
+  border-radius:25px ;
+  margin: 0;
+  padding: 0;
+margin-left: auto;
+margin-right: auto;
+  margin-top: 36px;
+  margin-bottom: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://img.freepik.com/premium-photo/blurred-bokeh-calm-flowing-river_734841-2247.jpg?semt=ais_hybrid);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.but-delete{
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.btn {
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 0px;
+  /* margin-left: 8px; */
+  
+}
+.posit-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-load-more-hidden{
+display: none;
+}
+.btn-load-more{
+  cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    width: 125px;
+    height: 40px;
+    background: #4e75ff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+.btn-js{
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    width: 125px;
+    height: 40px;
+    background: #4e75ff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+visibility: visible;
+}
+.fish{
+color: #cfd3e3;
+font-size: 40px;
+margin-left: 180px;
+}
+.divv{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+  background-color: #6c8cff;
+}
+
+.search-input {
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+  border: 1px solid #808080;
+  width: 272px;
+  height: 40px;
+  padding-left: 16px;
+  background: #fff;
+  box-sizing: border-box;
+  outline: none;
+  
+}
+.search-input:hover {
+  border: 1px solid #000;
+}
+
+.search-input:focus {
+  border: 2px solid #4e75ff;
+}
+.gallery-js{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  
+}
+.list-item {
+  width:400px;
+  background-color: #cfd3e3;
+  border: 1px solid rgb(57, 43, 43);
+  transition: transform .3s;
+  height: 100%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+  padding: 20px 10px;
+  /* height: 100%; */
+  background-color: rgb(167, 171, 172);
+  font-size: 30px;
+}
+.kuu {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.fish-list {
+  display: none;
+  position: absolute;
+  background: #ddf3e1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-top: px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.fish-list.active {
+  display: block;
+}
+.fish-list-item {
+  list-style: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.fish-list-item:hover {
+  background: #f0f0f0;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #5a6f8b;
 }

@@ -6,21 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <style>
-      a{
-        font-size: 34px;
-        margin-bottom:15px; 
-      }
-    </style>
   </head>
   <body>
 
-   <nav class = "cont">
-    <ul class = "gallery">
-      <li><a href="./1-gallery.html">Gallery</a></li>
-      <li><a href="./2-form.html">Form</a></li>
-    </ul>
-   </nav>
+     <form class="form form-js">
+      <p class = "fish">Search 
+        <button type="button" class="icon-btn" id="fish-list-btn">📜</button></p>
+    <button class="but-delete" >Delete</button>
 
+    <input
+      type="text"
+      name="query"
+      class="search-input search-input-js"
+      placeholder="Search images"
+    />
+    <button class="btn" type="submit">Search</button>
+    
+  </form>
+  <ul class="fish-list" id="fish-list">
+    <!-- Список риб буде згенеровано JavaScript-ом -->
+  </ul>
+  <ul class="gallery gallery-js"></ul>
+  <div class="posit-btn"> 
+    <button class="btn-load-more btn-load-more-hidden" type="submit">Load more</button>
+  </div>
+ 
+   <script src="./js/main.js" type="module"></script>
   </body>
 </html>
