@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        a{
+            font-size: 30px;
+        }
+        form{
+            display: flex; 
+             flex-direction: column;
+            padding: 24px;
+        }
+        label {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+input {
+    box-sizing: border-box;
+    padding: 8px 16px;
+    margin: 8px 0;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+input:hover {
+    border: 1px solid #000;
+}
+button {
+    margin-top: 8px;
+    background-color: #4e75ff;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    width: 95px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #6c8cff;
+}
+textarea{
+    width: 359px;
+    padding: 0;
+    margin: 0;
+}
+    </style>
+  <script type="module" crossorigin src="/Fish--api/2-form.js"></script>
+  <link rel="modulepreload" crossorigin href="/Fish--api/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/Fish--api/assets/styles-Bt8Q-1lU.css">
+</head>
+<body>
+    <section>
+        <a href="./index.html">Go gome</a>
+    </section>
+
+   <div> <form class="feedback-form" autocomplete="off">
+    <label>
+      Email
+      <input type="email" name="email" autofocus />
+    </label>
+    <label>
+      Message
+      <textarea name="message" rows="8"></textarea>
+    </label>
+    <button type="submit">Submit</button>
+  </form></div>
+
+</body>
+</html>
